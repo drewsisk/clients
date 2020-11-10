@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+	-webkit-filter: invert(100%);
+   filter: invert(100%);
+}
+
+html:hover, .invert:active {
+	-webkit-filter: invert(0);
+   filter: invert(0);
+}
+
+@supports (-moz-appearance:none) {	
+	html {
+	-webkit-filter: none;
+   filter: none;
+}
+
+html:hover {
+	-webkit-filter: none;
+   filter: none;
+}
+}
+
+body, h1, h2, h3 {
+	margin: 0px auto;
+	font-family:'SimSunWeb', Times New Roman, serif; font-weight:800;
+	font-size: 1em;
+	color: #000;
+	width: 100%;
+	text-align:center;
+
+
+}
+
+
+
+#Content {
+	margin: 0px auto;
+	width: 100%;
+	text-align: center;
+}
+
+#Content2 {
+	margin: 0px auto;
+	text-align: center;
+	width: 80%;
+	padding:10%;
+	text-align: left;
+	z-index: 100;
+	font-size: 2em;
+	color: #000000;
+	
+}
+
+.textblock {
+	width: 90%;
+	padding:5%;
+	text-align: left;
+	font-size: 2em;
+	color: #000000;
+	background-color: transparent;
+
+}
+
+.textblockfixed {
+	width: 60%;
+	padding:5%;
+	text-align: left;
+	z-index: 100;
+	font-size: 2em;
+	color: #000000;
+	background-color: transparent;
+}
+
+.textblock3 {
+	width: 70%;
+	padding:20% 10%;
+	text-align: left;
+	z-index: 100;
+	font-size: 2em;
+	color: #000000;
+	background-color: transparent;
+}
+
+.textblock4 {
+	margin:5vh;
+	padding:5vh;
+	text-align: left;
+	z-index: 100;
+	font-size: 2em;
+	color: #000000;
+	background-color:#ffffff;
+	display:inline-block;
+	min-height: 80vh;
+}
+
+.textblock4:hover {
+	z-index:100000;
+	}
+	
+.textblock4old {
+	margin:5vh;
+	padding:5vh;
+	text-align: left;
+	z-index: 100;
+	font-size: 2em;
+	color: #000000;
+	background-color:#ffffff;
+	display:inline-block;
+	min-height: 80vh;
+}
+	
+.bodytextwhite {
+	color:#fff;
+	text-align:left;
+	font-size: 1.5em;
+	width:100%;
+	margin-bottom:5%;
+	display: inline-block;
+}
+
+.bodytextwhite a{
+	text-decoration:none;
+	border-bottom:1px solid;
+	color:inherit;
+	}
+	
+.bodytextwhite a:hover{
+	background-color:#ffffff;
+	color:#000000;
+	background-image:url("/blackchalkblackchalk/images/background-texture-6.png");
+    background-repeat:round;
+    background-size:250px;
+    
+	}
+
+.bodytextwhite h2 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color:#fff;
+	text-align:left;
+	padding-left: 1em;
+	margin:0;
+	text-transform:uppercase;
+}
+
+.bodytextwhite h3 {
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	color:#fff;
+	text-align:left;
+	-webkit-margin-before: .5em;
+    -webkit-margin-after: 0;
+}	
+
+p {
+		-webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+    }
+
+.invert {
+	-webkit-filter: invert(100%);
+   filter: invert(100%);
+}
+
+.invert:hover, .invert:active {
+	-webkit-filter: invert(0);
+   filter: invert(0);
+}
+
+.invert2 {
+    -webkit-animation: inversion 60s infinite; /* Chrome, Safari, Opera */
+    animation: inversion 60s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes inversion {
+    50% {
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+    }
+}
+
+/* Standard syntax */
+@keyframes inversion {
+    50% {
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+    }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes inversion2 {
+    50% {
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+    }
+}
+
+/* Standard syntax */
+@keyframes inversion2 {
+    50% {
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+    }
+}
+
+.invert3:hover {
+    -webkit-animation: inversion3 4s ; /* Chrome, Safari, Opera */
+    animation: inversion3 4s ;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes inversion3 {
+    100% {
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+    }
+}
+
+/* Standard syntax */
+@keyframes inversion3 {
+    100% {
+        -webkit-filter: invert(100%); 
+        filter: invert(100%);
+    }
+}
+
+
+.background {
+	z-index: -100;
+	width: 100%;
+	position: fixed;
+	text-align:center;
+}
+
+.background2, {
+	z-index: -10;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	text-align:center;
+	background-color:#00ff00;
+}
+
+.background3 {
+	z-index: -10;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	text-align:left;
+	background-color:#00ff00;
+	float:left;
+  display: flex;
+     display: -webkit-flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-top:25vh;
+    margin-right:-20px;
+
+}
+
+.background4 {
+	z-index: -10;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	text-align:left;
+	background-color:#00ff00;
+	float:left;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    padding-top:25vh;
+    margin-right:-20px;
+    background-image:url("/blackchalkblackchalk/images/background-texture-6.png");
+    background-repeat:round;
+    background-size:250px;
+    -webkit-animation: shiftcolor 60s infinite; /* Chrome, Safari, Opera */
+    animation: shiftcolor 60s infinite;
+    cursor: ew-resize;
+
+}
+
+.foreground {
+	z-index: 1000;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	text-align:center;
+}
+
+.background img{
+	width:50%;
+	float:right;
+	padding:5%;
+}
+
+.foreground img{
+	height:50%;
+	width:auto;
+	padding-top:25vh;
+	position:relative;
+}
+
+.background2 img{
+	height:50%;
+	width:auto;
+	object-fit:cover;
+	padding-top:25vh;
+	position:relative;
+}
+
+.background3 img{
+	height:50%;
+	margin: auto;
+	border-right: 20px solid transparent;
+	width:auto;
+	object-fit:contain;
+	position:relative;
+	display:inline-block;
+
+}
+
+.background4 img{
+	height:50%;
+	border-right: 20px solid transparent;
+	width:auto;
+	object-fit:contain;
+	position:relative;
+	display:inline-block;
+
+}
+
+
+
+.background img hover{
+	z-index: 10000;
+}
+
+
+img {
+	width: 100%;
+    height: auto;
+    align: center;
+}
+
+
+h1 {
+	font-size: 1em;
+	margin: 0;
+	}
+	
+.leftcolumn {
+	width:45%;
+	float:left;
+	display: inline-block;
+	padding-right:2.5%;
+}
+
+.rightcolumn {
+	width:45%;
+	float:left;
+	display: inline-block;
+}
+
+div.sticky {position:sticky;position:-webkit-sticky;top:0;text-align:left; display:inline;}
+
+#stick {
+	text-align:left;
+	width:auto
+	z-index:10000;
+	display:inline;
+	background-color: #000000; 
+	line-height:90%; 
+	padding:5px;
+	color:#ffffff; 
+	float:left; 
+	width:auto;
+	-webkit-animation: shiftcolor 60s infinite; /* Chrome, Safari, Opera */
+    animation: shiftcolor 60s infinite;
+	}
+	
+#stick a {
+	text-decoration:none;
+	color:inherit;
+	}
+	
+#stick a:hover {
+	background-image:url("/blackchalkblackchalk/images/background-texture-7.png");
+    background-repeat:repeat;
+    background-size:250px;
+    }
+	
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+
+.visible-title {
+    visibility: visible;
+}
+
+.colorshift {
+    -webkit-animation: shiftcolor 60s infinite; /* Chrome, Safari, Opera */
+    animation: shiftcolor 60s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes shiftcolor {
+    0% {
+        background-color:#00ff00;
+    }
+    
+    33.333% {
+        background-color:#ff0000;
+    }
+    
+    66.666% {
+        background-color:#0000ff;
+    }
+    
+    100% {
+        background-color:#00ff00;
+    }
+}
+
+@keyframes shiftcolor {
+    0% {
+        background-color:#00ff00;
+    }
+    
+    33.333% {
+        background-color:#ff0000;
+    }
+    
+    66.666% {
+        background-color:#0000ff;
+    }
+    
+    100% {
+        background-color:#00ff00;
+    }
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+
+/* for 1000px or more */
+@media screen and (min-width: 1100px) {
+
+.textblock4 {
+	font-size: 2.5em;
+	
+}
+
+}
+
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+
+.leftcolumn {
+	width:100%;
+	padding-right:0;
+}
+
+.rightcolumn {
+	width:100%;
+}
+
+	#stick {
+		width:auto;
+		float:left;
+		display:block;
+		}
+}
+
+/* for 540px or less */
+@media screen and (max-width: 555px) {
+	body {
+		font-size:.8em;
+	}
+	
+	#stick {
+		width:auto;
+		float:left;
+		display:block;
+		}
+	
+}
+	
