@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<title>Tinashe Mushakavanhu</title>
+
+	<link href="css/styles-tinashe.css" rel="stylesheet" type="text/css">
+	  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	  <script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js"></script>
+    
+<link rel="stylesheet" type="text/css"
+    href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
+    
+<style type="text/css" media="screen">
+        @font-face { font-family: 'SimSunWeb'; src: url('fonts/SimSunWeb.woff2')format('woff'); }
+        
+            #header { 
+            font-family: "SimSunWeb"; 
+            font-feature-settings: "kern" on, "liga" on;
+            -moz-font-feature-settings: "kern" on, "liga" on;
+            -webkit-font-feature-settings: "kern" on, "liga" on;
+            -ms-font-feature-settings: "kern" on, "liga" on;
+            -o-font-feature-settings: "kern" on, "liga" on;
+        }
+        
+</style>
+
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800|Poppins:400,400i" rel="stylesheet">
+
+
+  
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.js"></script>
+
+  <script type="text/javascript" src="jquery.sticky.js"></script>
+    <script>
+    $(window).load(function(){
+      $("#stick").sticky({ topSpacing: 0 });
+      elem.style.width = "auto";
+    });
+  </script>
+
+<script type="text/javascript" src="jquery.color-2.1.0.js"></script>
+
+
+<script>
+$(document).ready(function(){ 
+    //** notice we are including jquery and the color plugin at 
+    //** http://code.jquery.com/color/jquery.color-2.1.0.js
+    
+    var scroll_pos = 0;
+    var animation_begin_pos = 0; //where you want the animation to begin
+    var animation_end_pos = 2000; //where you want the animation to stop
+    var beginning_color = new $.Color( 'rgb(229,229,230)' ); //we can set this here, but it'd probably be better to get it from the CSS; for the example we're setting it here.
+    var ending_color = new $.Color( 'rgb(184,184,184)' ); ;//what color we want to use in the end
+    $(document).scroll(function() {
+        scroll_pos = $(this).scrollTop(); 
+        if(scroll_pos >= animation_begin_pos && scroll_pos <= animation_end_pos ) { 
+           // console.log( 'scrolling and animating' );
+            //we want to calculate the relevant transitional rgb value
+            var percentScrolled = scroll_pos / ( animation_end_pos - animation_begin_pos );
+            var newRed = beginning_color.red() + ( ( ending_color.red() - beginning_color.red() ) * percentScrolled );
+            var newGreen = beginning_color.green() + ( ( ending_color.green() - beginning_color.green() ) * percentScrolled );
+            var newBlue = beginning_color.blue() + ( ( ending_color.blue() - beginning_color.blue() ) * percentScrolled );
+            var newColor = new $.Color( newRed, newGreen, newBlue );
+            //console.log( newColor.red(), newColor.green(), newColor.blue() );
+            $('body').animate({ backgroundColor: newColor }, 0);
+        } else if ( scroll_pos > animation_end_pos ) {
+             $('body').animate({ backgroundColor: ending_color }, 0);
+        } else if ( scroll_pos < animation_begin_pos ) {
+             $('body').animate({ backgroundColor: beginning_color }, 0);
+        } else { }
+    });
+});
+</script>
+
+
+
+</head>
+
+
+<body>
+<div id="Content">
+
+<div id="tinasheheader" style="width:96%; padding:2% 5% 2% 5%; background-color:#000000; color:#ffffff; z-index:1000; position:fixed; top:0;)">
+	<div class="leftcolumn">
+		<h1 style="color:#ffffff; text-align: left; font-size:1.7em;">Tinashe Mushakavanhu</h1>
+	</div>
+	
+	<div class="rightcolumn">
+		<div class="toplink"><a href="mailto:tinsmush@gmail.com">Email</a>&nbsp; | &nbsp;<a href="https://www.linkedin.com/in/tinashe-mushakavanhu-784ba1a8/">LinkedIn</a>&nbsp; | &nbsp;<a href="https://twitter.com/tinsmush">Twitter</a></div>
+	</div>
+</div>
+
+<div id="cv" style="width:80%; background-color:#ffffff; padding:5%; margin: 12% 5% 5% 5%; text-align:left; font-family: 'Poppins', sans-serif; font-weight: 400; font-size: 1.1em; position:relative;">
+
+
+<div class="cvcategory">
+<p>Principal Co-Investigator. ReadingZimbabwe.com (since 2016)</p>
+<p>Andrew W. Mellon Writer-in-Residence. Rhodes University (May &ndash; August 2018)</p>
+</div>
+
+<div class="cvcategory">
+	<h3>EDUCATION</h3>
+	<p>Ph.D. English. University of Kent. England. 2017.</p> 
+	<p>Dissertation: Anarchies of the Mind: A Contrapuntal Reading of the Poetry and Prose of Percy Bysshe Shelley and Dambudzo Marechera. </p>
+	<p>Supervisors: Prof Donna Landry and Prof Caroline Rooney</p>
+	<p>M.A. Creative Writing. Trinity College, Carmarthen. Wales. 2008.</p> 
+	<p>B.A. (Hons) English &Communication. Midlands State University. Zimbabwe. 2006. (First Class)</p>
+</div> 
+
+<div class="cvcategory">
+	<h3>RESEARCH AND TEACHING FIELDS</h3>
+	<p>African and diaspora literatures; digital humanities; philosophical anarchism; Romanticism; creative writing; media studies; comparative literatures; critical theory.</p> 
+</div> 
+
+<div class="cvcategory">
+<h3>FELLOWSHIPS</h3>
+<p>2018 Andrew W. Mellon Writer in Residence, Rhodes University, South Africa.</p> 
+<p>2017-18 NEW Inc residency fellowship, New Museum, New York, US. </p> 
+<p>2015-16 Knight-VICE Innovation Fellow, VICE Media, Knight Foundation and CUNY Graduate School of Journalism.</p> 
+<p>2015 Tow-Knight Entrepreneurial Journalism Fellowship. CUNY Graduate School of Journalism School, New York, US.</p> 
+<p>2007 Caine Prize Writing Fellowship. 7th Annual Caine Prize for Writing in Africa Workshop, Lake, Naivasha, Kenya.</p> 
+<p>2004 Crossing Borders Creative Writing Fellowship. British Council Zimbabwe and Lancaster University, UK.</p> 
+</div>
+
+<div class="cvcategory">
+<h3>AWARDS</h3>
+<p>2016 3rd Prize Winner, Haller Prize for Development Journalism in Africa</p> 
+<p>2016 CNN Diversity Fellow</p> 
+<p>2010 The Felix Dearden Report on Race Award National Union of Journalists Regional Press Awards, UK</p> 
+<p>2012 University of Kent Postgraduate Research Studentship. University of Kent, England.</p> 
+<p>2006 Trinity College Research Scholarship. Trinity College, Carmarthen, Wales.</p> 
+<p>2006 University Book Prize. Midlands State University, Zimbabwe.</p> 
+</div>
+
+<div class="cvcategory">
+<h3>GRANTS</h3>
+<p>2017 -2018 Dean's Faculty Research Grant. Virginia Commonwealth University, Richmond, Virginia (with Nontsikelelo Mutiti)<p>
+<p>2017- 2018 African Humanities Map Award, Consortium for Humanities Centers and
+Institutes, University of Madison, Wisconsin, US.<p>
+</div>
+
+<div class="cvcategory">
+<h3>PUBLICATIONS</h3>							
+<h4>Books</h4>
+<p><i>Some Writers Can Give You Two HeartBeat.</i> (Black Chalk & Co forthcoming, 2018).</p>
+<p><i>Visa Stories: Experiences Between Law and Migration.</i> Co-edited with Filippo Menozzi and Bahriye Kemal. Newcastle Upon-Tyne, Cambridge Scholars Publishing, 2013.</p> 
+<p><i>State of the Nation: Contemporary Zimbabwean Poetry.</i> Co-edited with David Nettleingham. Faversham, Kent: Conversation Paperpress, 2009.</p> 
+<p><i>A Haunting Touch.</i> Co-edited with A.J. Morgan. Cardigan: Parthian Books, 2007.</p> 
+
+
+<h4>Peer-reviewed Journal Articles</h4> 
+<p>&ldquo;Anarchies of the Mind: An Imaginary Conversation between Two Writers.&rdquo; Wasafiri: The Magazine of International Contemporary Writing 2012 27.4: 82-88.</p> 
+
+<h4>Peer-reviewed Book Chapters</h4>
+<p>&ldquo;A Brotherhood of Misfits: The Literary Anarchism of Dambudzo Marechera & Percy Bysshe Shelley.&rdquo; In <i>Reading Marechera.</i> Ed. Grant Hamilton. Suffolk: James Currey Publishers, 2013.<p>
+<p>&ldquo;Locating a Genre: Is Zimbabwe a Short Story Country?&rdquo; In <i>Writing Africa in the Short Story: Africa Literature Today</i> 31. Ed. Ernest N. Emenyonu. Suffolk: James Currey Publishers, 2013.<p>
+<p>&ldquo;Inside Outside: The Politics of Exile.&rdquo; In <i>Journeys Home: An Anthology of Contemporary African Diasporic Experience.</i> Ed. Salome Nnoromele & Lisa Say- Lindsey. Trenton, NJ: Africa World Press, 2009.<p>
+
+
+<h4>Selected Festival Readings</h4> 
+<p>2018: Fall for the Book Festival, &lsquo;Recovering Zimbabwe&rsquo;s Legacy.&rsquo;<p>
+<p>2011: Ledbury Poetry Festival, &lsquo;Zimbabwe: New Generation Poets&rsquo; with Kimberley Rose Kasirowore and Michael Tsingo.<p>
+<p>2010: Canterbury International Arts Festival &lsquo;Launch of State of the Nation: Contemporary Zimbabwean Poetry.&rsquo;<p>
+<p>2007: Hay Festival, &lsquo;The Next Big Things.&rsquo; <p>
+<p>2007: Hay Festival, &lsquo;Classic Book Club: Whiteman in Africa&rsquo; with Sir Peter Stothard and Peter Godwin.<p>
+<p>2005. Harare International Festival of the Arts, &lsquo;Inauguration of the Poetry Caf&eacute;.&rsquo;<p>
+<p>2004. Uncwadi Writers Conference, &lsquo;Writing Against All Odds - From Apartheid to Democracy.&rsquo;<p>
+
+<h4>Selected Poetry Publications</h4>
+<p>&ldquo;Being A Nobody&rdquo; in <i>New Coin</i> (Forthcoming, December 2018)<p>
+<p>&ldquo;Green Man Festival,&rdquo; in <i>Out of Bounds: British Black & Asian Poets.</i> Eds. Jackie Kay, James Procter & Gemma Robinson. Newcastle: Bloodaxe, 2012.<p>
+<p>&ldquo;In the House of Exile&rdquo; and &ldquo;Tomorrow is Long Coming,&rdquo; on <i>Badilisha Poetry X-change</i>, 2010. <p>
+<p>&ldquo;Two Poems&rdquo; in <i>The Warwick Review</i> Vol. 3 No. 4 December 2009.<p>
+<p>&ldquo;The distorted looking glass&rdquo; & &ldquo;Crossing the Line&rdquo; in <i>Exiled Ink!</i> Autumn-Winter 2008, Issue 10, p. 9<p>
+<p>&ldquo;The World According to Conrad,&rdquo; &ldquo;Entrepreneurship&rdquo; (republication), in <i>Farafina</i>, Vol 11, 2008 (guest edited by Petina Gappah)<p>
+<p>&ldquo;On a rainy street,&rdquo; in <i>A Haunting Touch</i>, Eds. Tinashe Mushakavanhu and A.J Morgan. Cardigan: Parthian Books, 2007.<p>
+<p>&ldquo;Entrepreneurship,&rdquo; on <i>Poetry International Web</i>, 2005.<p>
+
+
+<h4>Recorded Poetry</h4>
+<p>&lsquo;Amafikizolo&rsquo; (studio recording) featured on Budding Echoes: A collection of poetry Cd. Harare: Budding Writers Association of Zimbabwe, 2006. <p>
+
+<h4>Short Stories</h4>
+<p>&ldquo;Postcards&rdquo; in Jungfrau : An Anthology from the 7th Caine Prize Workshop. London: The New Internationalist, 2007.<p>
+<p>&ldquo;Majoni&rdquo; in A Haunting Touch edited by Tinashe Mushakavanhu and A.J. Morgan. Cardigan: Parthian Books.<p>
+<p>&ldquo;The Harare Hermit&rdquo; in Short Writings from Bulawayo III edited by Jane Morris. Bulawayo: amaBooks, 2005. <p>
+<p>&ldquo;City Insomnia&rdquo; in Writing Now: More Stories from Zimbabwe edited by Irene Staunton. Harare: Weaver Press, 2004.<p>
+<p>&ldquo;Amainini Wendy&rdquo; Short Writings from Bulawayo II edited by Jane Morris. Bulawayo: amaBooks, 2004. <p>
+
+</div>
+
+<div class="cvcategory">
+<h4>Conferences, Exhibitions, and Readings Organized</h4>
+<p>Some Writers Can Give You Two Heartbeats Exhibition, opening November 15 2018 – January 31 2019. Virginia Commonwealth University. US.<p>
+<p>Caine Prize Writers in the Supermarket, April 2, 2014, Meikles Mega Market, Harare. Funded by Meikles Foundation. <p>
+<p>Visa Stories: Experiences Between Law and Migration, October 21, 2011, University of Kent. Co-organized with Filippo Menozzi and Bahriye Kemal for Radical Distrust, the ESRC-led cross- research council scheme Global Uncertainties: Security for a Changing World. (Conference proceedings were published as a book)<p>
+
+<h4>Public Lectures</h4>
+<p>&ldquo;Inventing the past&rdquo; presented as Robert Lehman Visiting Speaker, Intra-Disciplinary Seminar, The Cooper Union for the Advancement of Science and Art, New York, US, January 22, 2018.<p>
+
+<h4>Invited Talks </h4>
+<p>&ldquo;In the dark times, will there still be singing? The Imagination and Constraints in Zimbabwe&rdquo; Duke University, February 26 2018.<p>
+<p>&ldquo;Tweeting and Reading Zimbabwe Today: A Conversation with Tinashe Mushakavanhu&rdquo; Forum for Scholars and Publics, Duke University, October 4, 2016.<p>
+<p>&ldquo;Memory, Erasure and Virtual Repatriation: The Zimbabwean Case,&rdquo; GC Digital Initiatives, The Graduate Center, CUNY, February 21, 2018<p>
+<p>Invited discussant, African Mobilities - Im/mobility + Afro-Imaginary, Moderated by Mario Gooden and Mabel O. Wilson, Global Africa Lab at Columbia GSAPP, New York, February 17, 2018.<p>
+<p>&ldquo;The Zimbabwean Intellectual in the Social Media Age&rdquo; Krieger School of Arts & Sciences, Johns Hopkins University, February 21, 2017.<p>
+<p>Invited discussant, The Future of News in Africa: Panel Discussion, NYC Entrepreneurial Journalism and Media Meetup, CUNY Graduate School of Journalism, May 10, 2016. <p>
+<p>&ldquo;Anarchists and visionaries: Dambudzo Marechera and Percy Bysshe Shelley,&rdquo; Humboldt University (guest speaker), July 9, 2010.<p>
+</div>
+
+<div class="cvcategory">
+<h3>Administrative & Extra-curricular activities</h3>
+<p>2019&ndash;2021 Editorial Review Board, African Studies Review <p>
+<p>2014&ndash;2018 Chairperson, The Dambudzo Marechera Trust<p>
+<p>2015&ndash;Judge (Flash Fiction Category), Etisalat Prize for Literature, Lagos, Nigeria.<p>
+<p>2008&ndash;2011, Researcher in Residence, Research Councils UK and Wellcome Trust, UK. <p>
+<p>2005&ndash;2008, Executive National Secretary, Budding Writers Association of Zimbabwe (BWAZ), Harare, Zimbabwe.<p>
+</div>
+
+<div class="cvcategory">
+<h3>LANGUAGES </h3>
+<p>English (fluent) French (conversant), Shona (fluent).<p>
+</div>
+
+</div>
+
+
+
+
+
+</div>
+</body>
+</html>
