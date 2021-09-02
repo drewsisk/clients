@@ -33,6 +33,11 @@
 
         }
         
+                .toplayer {
+        position:absolute;
+        z-index:1;
+        }
+        
         .fade-in {
 	opacity: 1;
 	animation-name: fadeInOpacity;
@@ -53,6 +58,8 @@
 </head>
   
 <body>
+
+	<div class="toplayer">
     <img height="100px" width="150px"
         id="img" src=
         "francis_hewitt_1.jpg">
@@ -60,6 +67,7 @@
     <img height="100px" width="150px"
         id="img" src=
         "14_Drying-Flowers-with-Microwaves_CH_7.jpg">
+    </div>
   
     <div id="block" class="fade-in"></div>
   
