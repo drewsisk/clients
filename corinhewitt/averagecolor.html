@@ -29,6 +29,23 @@
         	padding:0;
 
         }
+        
+        .fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
     </style>
 </head>
   
@@ -37,7 +54,7 @@
         id="img" src=
         "14_Drying-Flowers-with-Microwaves_CH_7.jpg">
   
-    <div id="block"></div>
+    <div id="block" class="fade-in"></div>
   
     <!-- Function to find the average color -->
     <script>
