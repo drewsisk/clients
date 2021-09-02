@@ -14,7 +14,7 @@
             
         }
         
-        #img2 {
+        #imgtwo {
             width:25%;
             height:auto;
             padding:2em;
@@ -30,10 +30,11 @@
             overflow:hidden;
             margin:0;
             padding: 0;
+            left:0;
             
             }
             
-        #block2 {
+        #blocktwo {
             position: fixed;
             z-index: -1;
             background-color: white;
@@ -42,6 +43,7 @@
             overflow:hidden;
             margin:0;
             padding: 0;
+            right:0;
             
             }            
             
@@ -84,7 +86,7 @@
         "francis_hewitt_1.jpg">
         
     <img height="100px" width="150px"
-        id="img" src=
+        id="imgtwo" src=
         "14_Drying-Flowers-with-Microwaves_CH_7.jpg">  
     </div>
         
@@ -188,7 +190,7 @@
         }, 500)
     </script>
     
-        <div id="block2" class="fade-in"></div>
+        <div id="blocktwo" class="fade-in"></div>
     
     <!-- Function to find the average color 2 -->
     <script>
@@ -273,12 +275,12 @@
   
         setTimeout(() => {
             rgb = averageColor(
-                document.getElementById('img2'));
+                document.getElementById('imgtwo'));
   
             // Select the element and set its
             // background color
             document
-                .getElementById("block2")
+                .getElementById("blocktwo")
                 .style.backgroundColor =
                 'rgb(' + rgb.r + ','
                 + rgb.g + ','
